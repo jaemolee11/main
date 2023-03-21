@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--PREEvision 10.0.12 final--><!--JDK: 11.0.9.1--><!--Autosar Release 4.4.0 Revision 0001--><!--Date: 2023.03.21 at 14:41:13--><AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default"/>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="895a6be223cc32ef8ded654169ad8720">
+      <SHORT-NAME>DataTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="e22064b8e38c391d82e3790f08a6e76c">
+          <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="Oa7be0fd186dda6353a19cd5aXOa7be0fd186dda6353a19cd5300">
+              <SHORT-NAME>AdtName1</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="7b73435e97fb374c95d324bd61aab549">
+          <SHORT-NAME>BaseTypes</SHORT-NAME>
+          <ELEMENTS>
+            <SW-BASE-TYPE UUID="Oa7be0fd186dda6353a19ce21XOa7be0fd186dda6353a19ce1a00">
+              <SHORT-NAME>uint8</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+              <BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</BYTE-ORDER>
+              <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="9da517fb126b3d74956805238df3252b">
+          <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE UUID="Oa7be0fd186dda6353a19cdbeXOa7be0fd186dda6353a19cdb700">
+              <SHORT-NAME>IdtName1</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="191d6993da7c32bab0f2e4208837cf0e">
+      <SHORT-NAME>SoftwareTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="cf7b864c28bc3b319d748e8e42a22756">
+          <SHORT-NAME>ComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21f83XNa7be0fd186c91b780f21f7c00">
+              <SHORT-NAME>asw111</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f21f83xNa7be0fd186c91b780f21fac00">
+                  <SHORT-NAME>SenderPort779</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/SoftwareTypes/Interfaces/SRI1</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f21f83xNa7be0fd186c91b780f21fce00">
+                  <SHORT-NAME>ReceiverPort947</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="938f6b6d337e3d8c9feea2f951f92002">
+          <SHORT-NAME>Interfaces</SHORT-NAME>
+          <ELEMENTS>
+            <SENDER-RECEIVER-INTERFACE UUID="Oa7be0fd186dda6353a19cc1eXOa7be0fd186dda6353a19cc1700">
+              <SHORT-NAME>SRI1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="Oa7be0fd186dda6353a19cc81XOa7be0fd186dda6353a19cc7a00">
+                  <SHORT-NAME>DE1</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/IdtName1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

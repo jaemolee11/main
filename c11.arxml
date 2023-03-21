@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--PREEvision 10.0.12 final--><!--JDK: 11.0.9.1--><!--Autosar Release 4.4.0 Revision 0001--><!--Date: 2023.03.21 at 14:41:20--><AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default"/>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="191d6993da7c32bab0f2e4208837cf0e">
+      <SHORT-NAME>SoftwareTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="cf7b864c28bc3b319d748e8e42a22756">
+          <SHORT-NAME>ComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21da3XNa7be0fd186c91b780f21d9c00">
+              <SHORT-NAME>c1</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21e51XNa7be0fd186c91b780f21e4a00">
+                  <SHORT-NAME>c11</SHORT-NAME>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

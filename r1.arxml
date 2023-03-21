@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--PREEvision 10.0.12 final--><!--JDK: 11.0.9.1--><!--Autosar Release 4.4.0 Revision 0001--><!--Date: 2023.03.21 at 14:41:29--><AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00046.xsd">
+  <ADMIN-DATA>
+    <LANGUAGE>EN</LANGUAGE>
+    <USED-LANGUAGES>
+      <L-10 L="EN" xml:space="default"/>
+    </USED-LANGUAGES>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="895a6be223cc32ef8ded654169ad8720">
+      <SHORT-NAME>DataTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="e22064b8e38c391d82e3790f08a6e76c">
+          <SHORT-NAME>ApplicationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-PRIMITIVE-DATA-TYPE UUID="Oa7be0fd186dda6353a19cd5aXOa7be0fd186dda6353a19cd5300">
+              <SHORT-NAME>AdtName1</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+            </APPLICATION-PRIMITIVE-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="7b73435e97fb374c95d324bd61aab549">
+          <SHORT-NAME>BaseTypes</SHORT-NAME>
+          <ELEMENTS>
+            <SW-BASE-TYPE UUID="Oa7be0fd186dda6353a19ce21XOa7be0fd186dda6353a19ce1a00">
+              <SHORT-NAME>uint8</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+              <BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</BYTE-ORDER>
+              <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="9da517fb126b3d74956805238df3252b">
+          <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE UUID="Oa7be0fd186dda6353a19cdbeXOa7be0fd186dda6353a19cdb700">
+              <SHORT-NAME>IdtName1</SHORT-NAME>
+              <CATEGORY>VALUE</CATEGORY>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="191d6993da7c32bab0f2e4208837cf0e">
+      <SHORT-NAME>SoftwareTypes</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="cf7b864c28bc3b319d748e8e42a22756">
+          <SHORT-NAME>ComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21f83XNa7be0fd186c91b780f21f7c00">
+              <SHORT-NAME>asw111</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f21f83xNa7be0fd186c91b780f21fac00">
+                  <SHORT-NAME>SenderPort779</SHORT-NAME>
+                  <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/SoftwareTypes/Interfaces/SRI1</PROVIDED-INTERFACE-TREF>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f21f83xNa7be0fd186c91b780f21fce00">
+                  <SHORT-NAME>ReceiverPort947</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f2202aXNa7be0fd186c91b780f2202300">
+              <SHORT-NAME>asw112</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f2202axNa7be0fd186c91b780f2205100">
+                  <SHORT-NAME>SenderPort780</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f2202axNa7be0fd186c91b780f2207300">
+                  <SHORT-NAME>ReceiverPort948</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f220cfXNa7be0fd186c91b780f220c800">
+              <SHORT-NAME>asw121</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f220cfxNa7be0fd186c91b780f220f800">
+                  <SHORT-NAME>SenderPort781</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f220cfxNa7be0fd186c91b780f2211a00">
+                  <SHORT-NAME>ReceiverPort949</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f22176XNa7be0fd186c91b780f2216f00">
+              <SHORT-NAME>asw122</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f22176xNa7be0fd186c91b780f2219d00">
+                  <SHORT-NAME>SenderPort782</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f22176xNa7be0fd186c91b780f221bf00">
+                  <SHORT-NAME>ReceiverPort950</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f2221bXNa7be0fd186c91b780f2221400">
+              <SHORT-NAME>asw211</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f2221bxNa7be0fd186c91b780f2224400">
+                  <SHORT-NAME>SenderPort783</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f2221bxNa7be0fd186c91b780f2226600">
+                  <SHORT-NAME>ReceiverPort951</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f222c2XNa7be0fd186c91b780f222bb00">
+              <SHORT-NAME>asw212</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f222c2xNa7be0fd186c91b780f222e900">
+                  <SHORT-NAME>SenderPort784</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f222c2xNa7be0fd186c91b780f2230b00">
+                  <SHORT-NAME>ReceiverPort952</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f22367XNa7be0fd186c91b780f2236000">
+              <SHORT-NAME>asw213</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f22367xNa7be0fd186c91b780f2238e00">
+                  <SHORT-NAME>SenderPort785</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f22367xNa7be0fd186c91b780f223b000">
+                  <SHORT-NAME>ReceiverPort953</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f2240cXNa7be0fd186c91b780f2240500">
+              <SHORT-NAME>asw214</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f2240cxNa7be0fd186c91b780f2243300">
+                  <SHORT-NAME>SenderPort786</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f2240cxNa7be0fd186c91b780f2245500">
+                  <SHORT-NAME>ReceiverPort954</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f224b1XNa7be0fd186c91b780f224aa00">
+              <SHORT-NAME>asw221</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f224b1xNa7be0fd186c91b780f224da00">
+                  <SHORT-NAME>SenderPort787</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f224b1xNa7be0fd186c91b780f224fc00">
+                  <SHORT-NAME>ReceiverPort955</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <APPLICATION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f22558XNa7be0fd186c91b780f2255100">
+              <SHORT-NAME>asw222</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f22558xNa7be0fd186c91b780f2257f00">
+                  <SHORT-NAME>SenderPort788</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="Na7be0fd186c91b780f22558xNa7be0fd186c91b780f225a100">
+                  <SHORT-NAME>ReceiverPort956</SHORT-NAME>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21da3XNa7be0fd186c91b780f21d9c00">
+              <SHORT-NAME>c1</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21e51XNa7be0fd186c91b780f21e4a00">
+                  <SHORT-NAME>c11</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/c11</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21ea2XNa7be0fd186c91b780f21e9b00">
+                  <SHORT-NAME>c12</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/c12</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21e43XNa7be0fd186c91b780f21e3c00">
+              <SHORT-NAME>c11</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21f91XNa7be0fd186c91b780f21f8a00">
+                  <SHORT-NAME>asw111</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw111</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f22038XNa7be0fd186c91b780f2203100">
+                  <SHORT-NAME>asw112</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw112</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186e8825a492827bXNa7be0fd186e8825a492827400">
+                  <SHORT-NAME>asw211</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw211</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21e94XNa7be0fd186c91b780f21e8d00">
+              <SHORT-NAME>c12</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f220ddXNa7be0fd186c91b780f220d600">
+                  <SHORT-NAME>asw121</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw121</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f22184XNa7be0fd186c91b780f2217d00">
+                  <SHORT-NAME>asw122</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw122</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21df4XNa7be0fd186c91b780f21ded00">
+              <SHORT-NAME>c2</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21ef1XNa7be0fd186c91b780f21eea00">
+                  <SHORT-NAME>c21</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/c21</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21f42XNa7be0fd186c91b780f21f3b00">
+                  <SHORT-NAME>c22</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/c22</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21ee3XNa7be0fd186c91b780f21edc00">
+              <SHORT-NAME>c21</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f22229XNa7be0fd186c91b780f2222200">
+                  <SHORT-NAME>asw211</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw211</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f222d0XNa7be0fd186c91b780f222c900">
+                  <SHORT-NAME>asw212</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw212</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f22375XNa7be0fd186c91b780f2236e00">
+                  <SHORT-NAME>asw213</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw213</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f2241aXNa7be0fd186c91b780f2241300">
+                  <SHORT-NAME>asw214</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw214</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21f34XNa7be0fd186c91b780f21f2d00">
+              <SHORT-NAME>c22</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f224bfXNa7be0fd186c91b780f224b800">
+                  <SHORT-NAME>asw221</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw221</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f22566XNa7be0fd186c91b780f2255f00">
+                  <SHORT-NAME>asw222</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/asw222</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+            <COMPOSITION-SW-COMPONENT-TYPE UUID="Na7be0fd186c91b780f21d5cXNa7be0fd186c91b780f21d5500">
+              <SHORT-NAME>r1</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21db1XNa7be0fd186c91b780f21daa00">
+                  <SHORT-NAME>c1</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/c1</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="Na7be0fd186c91b780f21e02XNa7be0fd186c91b780f21dfb00">
+                  <SHORT-NAME>c2</SHORT-NAME>
+                  <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/c2</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE UUID="938f6b6d337e3d8c9feea2f951f92002">
+          <SHORT-NAME>Interfaces</SHORT-NAME>
+          <ELEMENTS>
+            <SENDER-RECEIVER-INTERFACE UUID="Oa7be0fd186dda6353a19cc1eXOa7be0fd186dda6353a19cc1700">
+              <SHORT-NAME>SRI1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="Oa7be0fd186dda6353a19cc81XOa7be0fd186dda6353a19cc7a00">
+                  <SHORT-NAME>DE1</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/ImplementationDataTypes/IdtName1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+            </SENDER-RECEIVER-INTERFACE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="190d5f3bad543610b71ccc5e43dec022">
+      <SHORT-NAME>System</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM UUID="Na7be0fd186c91b780f2267bXNa7be0fd186c91b780f2267400">
+          <SHORT-NAME>HEV</SHORT-NAME>
+          <FIBEX-ELEMENTS>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/Topology/HardwareComponents/ecu1aliasname</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+          </FIBEX-ELEMENTS>
+          <MAPPINGS>
+            <SYSTEM-MAPPING UUID="Na7be0fd186d88b22a067a0eXNa7be0fd186d88b22a067a0700">
+              <SHORT-NAME>Mappings117</SHORT-NAME>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING UUID="Na7be0fd186d88b22a0a9442XNa7be0fd186d88b22a0a943a00">
+                  <SHORT-NAME>SwHwMapping190608</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/System/HEV/r1</CONTEXT-COMPOSITION-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/SoftwareTypes/ComponentTypes/r1/c1</CONTEXT-COMPONENT-REF>
+                      <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/SoftwareTypes/ComponentTypes/c1/c11</CONTEXT-COMPONENT-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/SoftwareTypes/ComponentTypes/c11/asw111</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/Topology/HardwareComponents/ecu1aliasname</ECU-INSTANCE-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE UUID="Na7be0fd186c91b780f21d6bXNa7be0fd186c91b780f21d6400">
+              <SHORT-NAME>r1</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">r1longname</L-4>
+              </LONG-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/SoftwareTypes/ComponentTypes/r1</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE UUID="94fd9aee4f0e34f7bec260787bb689d0">
+      <SHORT-NAME>Topology</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="52f85229c31e3bd6ad3d7c3bd3507068">
+          <SHORT-NAME>HardwareComponents</SHORT-NAME>
+          <ELEMENTS>
+            <ECU-INSTANCE UUID="Na7be0fd186c91b780f22730XNa7be0fd186c91b780f2272900">
+              <SHORT-NAME>ecu1aliasname</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">ecu1longname</L-4>
+              </LONG-NAME>
+              <SLEEP-MODE-SUPPORTED>false</SLEEP-MODE-SUPPORTED>
+              <WAKE-UP-OVER-BUS-SUPPORTED>false</WAKE-UP-OVER-BUS-SUPPORTED>
+            </ECU-INSTANCE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
